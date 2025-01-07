@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4b3832; /* Cor de fundo atualizada */
+    color: white;
+}
+
+.logo img {
+    height: 110px; /* Ajuste a altura do logo conforme necessário */
+}
+
+nav .menu {
+    display: flex;
+    
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu ul li {
+    padding: 0 15px 0 15px;
+    
+}
+.menu a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #aa9d98; /
+}
+
+footer {
+    margin-top: 260px;
+    background-color: #4b3832;
+    color: #aa9d98;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #aa9d98;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para ícones das redes sociais */
+  footer a i {
+    font-size: 1.5em; /* Tamanho maior para os ícones */
+    margin-right: 8px; /* Distância entre o ícone e o texto */
+  }
+  
+  footer a:hover i {
+    color: #f2e2d2; /* Cor do ícone quando o link é hover */
+  }
+  
+  /* Estilo para o rodapé inferior */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #aa9d98;
+    padding-top: 20px;
+  }
+
+.mapBox{
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background: #fff;
+
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
