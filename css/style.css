@@ -53,8 +53,265 @@ nav .menu {
     color: #aa9d98; /
 }
 
+
+/* Seção Hero */
+.hero {
+  position: relative;
+  height: 500px;
+  background-image: url('https://recipesblob.oetker.com.br/assets/a81bc035eb7f407faaa2c93e04edaf78/1440x580/bolo-de-aniversrio-de-chocolate.jpg');
+  background-size: cover; 
+  background-position: center; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobrepor um fundo semitransparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.whatsapp-link {
+  padding: 15px 30px;
+  background-color: #25d366; /* Cor do WhatsApp */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+  background-color: #128c7e;
+}
+
+
+.cardapio{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-top: 80px;
+}
+
+/* Estilo do menu */
+.menu-cardapio {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-cardapio h2 {
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+.cardapio-link {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #4b3832;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cardapio-link:hover {
+  background-color: #6b534c;
+  color: white;
+  
+}
+
+/* Estilo para a seção do Carousel */
+.carousel-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.carousel-container {
+  border-radius: 30px;
+  position: relative;
+  width: 66%; /* ou qualquer tamanho que você desejar */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Esconde as imagens que estão fora da área visível */
+  height: 400px; /* Definindo uma altura fixa para o container */
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%; /* Ajusta a altura da imagem para 100% do container */
+  object-fit: cover; /* Garante que a imagem preencha toda a área sem distorcer */
+  display: block;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Estilo do texto da seção */
+.carousel-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4b3832; /* Cor que combina com o resto do site */
+}
+.contact {
+  padding: 50px;
+  background-color: #4b3832; /* Cor de fundo atualizada */
+  color: white; /* Cor da fonte branca */
+  text-align: center;
+}
+
+.contatos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  margin-bottom: 30px;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  font-size: 1.2rem;
+  color: white; /* Links na cor branca */
+  text-decoration: none;
+  margin: 10px 0;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #aa9d98; /* Cor de hover para os links */
+}
+
+.social-media i {
+  margin-right: 8px;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  background-color: #aa9d98; /* Cor do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #4b3832; /* Cor de hover para o botão */
+}
+
+.container-about-us{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-about-us img{
+  height: 350px;
+
+}
+.about-us {
+  padding: 50px;
+  background-color: #f9f9f9;
+  color: #4b3832; /* Cor do texto */
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4b3832;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us p:first-child {
+  font-weight: bold;
+}
+
+
 footer {
-    margin-top: 260px;
     background-color: #4b3832;
     color: #aa9d98;
     padding: 40px 0;
